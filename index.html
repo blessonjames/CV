@@ -1,75 +1,343 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
   <meta charset="utf-8">
-  <title> Project X</title>
+  <title>Blesson | About</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Philosopher:ital,wght@1,700&family=Ubuntu&family=Sacramento&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/b678ecaf6f.js" crossorigin="anonymous"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicons/favicon.ico">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <table>
-    <tr>
-      <td><img src="assets\images\blesson_dp.png" alt="Blesson Profile Picture" height="150"></td>
-      <td><h1>Blesson James</h1>
-      <p><em>Full Stack <strong>
-        <a href="https://www.bitdegree.org/tutorials/what-is-a-web-developer/">Web Developer</a></strong></em></p>
-      <p>I am a software engineer. My programming skills contains Python, CSS, JavaScript, Ansible, Docker etc.</p></td>
-    </tr>
-  </table>
-  <hr>
-  <h3>Books & Teachings</h3>
-  <ul>
-    <li>This is my point number one.</li>
-    <li>This is my point number two.</li>
-  </ul>
-  <hr>
-  <h3>Work Experience</h3>
-  <table>
-    <thead>
-      <th>Duration</th>
-      <th>Designation/Experience</th>
-    </thead>
-    <tbody>
-      <td>2017-2019</td>
-      <td>Associate Software Engineer</td>
-    </tbody>
-    <tbody>
-      <td>2019-2020</td>
-      <td>Software Engineer</td>
-    </tbody>
-  </table>
-  <hr>
-  <h3>Skills</h3>
-  <table border="2">
-    <tr>
-      <td>
-        <table>
-          <tr>
-            <td>Python Scripting</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Docker</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>
-            <td>Ansible</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Docker</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <a href="hobbies.html">Hobbies</a> <a href="contacts.html">Contacts</a>
+  <section id="nav-section">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#intro"><img class="logo" src="favicons/logo.png" alt="logo"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Work <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-section">Contact <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+    </<section>
+
+    <section id="intro">
+      <div class="container-fluid">
+        <div class="intro-images">
+          <img class="guitarist-img" src="images/guitarist.png" alt="guitarist-logo">
+          <img class="piano-img" src="images/piano.png" alt="piano">
+          <img class="ping-pong-img" src="images/ping.png" alt="ping-pong">
+          <img class="cards-img" src="images/cards.png" alt="cards">
+        </div>
+        <div class="intro-text">
+          <h1 class="intro-header">I'm Blesson</h1>
+          <h3 class="h3-role">Full Stack Web Developer</h3>
+          <p class="intro-para">I'm also a Guitarist, Pianist & Illusionist 😊. I love playing table tennis.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container-fluid">
+
+
+        <div>
+          <h1 class="skill-header">Tools/Technologies</h1>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <img class="skill-img" src="images/html.png" alt="HTML">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <img class="skill-img" src="images/css.png" alt="CSS">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <img class="skill-img" src="images/javascript.png" alt="JavaScript">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <img class="skill-img" src="images/bootstrap.png" alt="BootStrap">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <img class="skill-img" src="images/python.png" alt="Python">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <img class="skill-img" src="images/django.png" alt="Django">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <img class="skill-img" src="images/Ansible.png" alt="Ansible">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <img class="skill-img" src="images/cplus.png" alt="C++">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <img class="skill-img" src="images/pl-sql.png" alt="PL/SQL">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <img class="skill-img" src="images/PostgreSQL.png" alt="PostgreSQL">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <img class="skill-img" src="images/mysql.png" alt="MySQL">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <img class="skill-img" src="images/mongodb.png" alt="MongoDB">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <img class="skill-img" src="images/docker.png" alt="Docker">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <img class="skill-img" src="images/linux.png" alt="Linux">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <img class="skill-img" src="images/console.png" alt="Console">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <img class="skill-img" src="images/bash.png" alt="Bash">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <img class="skill-img" src="images/git.png" alt="Git">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <img class="skill-img" src="images/jenkins.png" alt="Jenkins">
+          </div>
+
+        </div>
+        <button type="button" class="btn btn-dark btn-lg more-info-btn" data-toggle="modal" data-target="#skills-detail"><i class="fas fa-info-circle"></i> More Info</button>
+        <div class="modal fade contact-form" id="skills-detail" role="dialog">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="inquiryModalLabel">Skills</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                  <span>&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table>
+                  <tr>
+                    <td>Software Development</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Analytical and Problem Solving</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>OOPs</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>HTML</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>CSS</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>JavaScript</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Bootstrap</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>JSON</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>XML</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Python</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Django</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Ansible</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Docker & Containers</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>ARM Templates</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>AutoIT</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>PL/SQL</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Shell Scripting</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Git</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Unix/Linux</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Azure DevOps</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>C++</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Jenkins</td>
+                    <td class="star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <h1 class="work-header">Work Experience</h1>
+      <div class="row">
+        <div class="col-lg-6 col-work">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Application Development Analyst</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Multinational Professional Services Company</h6>
+              <h6 class="card-subtitle mb-2 text-muted">06/2019 - Present</h6>
+              <p class="card-text p-work">
+              <ul>
+                <li>Working for an American multinational technology client while following the Agile Delivery Method. Automating client's business & customer onboarding processes in the different areas of cloud computing using Python Scripting, ARM
+                  templates, Ansible & Restful APIs.</li>
+                <li>Introduced docker & containers to the team & migrated the containers to Azure Container Instances and integrated it with Azure Pipelines for continuous integration & delivery.</li>
+                <li>Introduced AutoIT to the team for automating applications where the command-line option is not available.</li>
+              </ul>
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-6 col-work">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Application Development Associate</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Multinational Professional Services Company</h6>
+              <h6 class="card-subtitle mb-2 text-muted">07/2017 - 05/2019</h6>
+              <p class="card-text p-work">
+              <ul>
+                <li>Worked for one of the largest private telecommunication clients, designing and developing for the Billing applications (Arbor & Verl) using Pl/SQL, Shell Scripting, Perl Scripting, and Python.</li>
+                <li>Developed GUI application using Python for Reporting that fetch customer data from the production database, analyze/process, and displays it for various scenarios.</li>
+                <li>Code analysis, performance improvements, modifications of existing scripts. Automated codes that required frequent manual intervention.</li>
+              </ul>
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-section">
+      <h1 class="h1-contact">Need a Web Application?</h1>
+      <h1 class="h1-contact2">Or just wana say Hi...?</h1>
+      <h2 class="h2-contact">Drop me a message!</h2>
+      <button class="btn btn-lg btn-dark contact-btn" type="button" data-toggle="modal" data-target="#contact">Contact</button>
+      <div class="modal fade contact-form" id="contact" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="inquiryModalLabel">Message Me</h5>
+              <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="" method="POST">
+                <div class="form-group">
+                  <label for="name" class="col-form-label">Name:</label>
+                  <input type="text" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="col-form-label">Email:</label>
+                  <input type="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="col-form-label">Phone:</label>
+                  <input type="text" name="phone" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="message" class="col-form-label">Message:</label>
+                  <textarea name="message" class="form-control"></textarea>
+                </div>
+                <hr>
+                <input type="submit" value="Send" class="btn btn-block btn-dark">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <a class="a-footer" href="http://www.linkedin.com/in/blessonjames"><i class="fab fa-linkedin footer-icon"></i></a>
+      <a class="a-footer" href="http://www.facebook.com/blesson.james.9"><i class="fab fa-facebook-f footer-icon"></i></a>
+      <a class="a-footer" href="http://www.instagram.com/blesson.james"><i class="fab fa-instagram footer-icon"></i></a>
+      <p class="p-footer">© Copyright 2020 blessonjames.io</p>
+    </section>
+
 </body>
 
 </html>
