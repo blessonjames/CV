@@ -123,11 +123,11 @@ td {
 #skills {
   background-color: white;
   padding: 7% 15%;
+  text-align: center;
 }
 
 .skill-header {
   color: black;
-  text-align: center;
   font-weight: 400;
   font-size: 3rem;
   padding: 0 2% 6%;
@@ -151,7 +151,8 @@ td {
 } */
 
 .more-info-btn {
-  margin: 5% 38% 0;
+  /* margin: 5% 38% 0; */
+  margin: 5% 0 0;
   width: 200px;
   padding: 1% 0;
 }
